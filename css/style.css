@@ -1,0 +1,39 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+img.card-img-top {
+    object-fit: cover;
+    cursor: pointer;
+    max-height: 150px !important;
+    max-width: 150px !important;
+}
+
+img.card-img-top.girar {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+body {
+    text-align: center;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+}
+
+footer a,
+footer a:hover {
+    color: white;
+}
+
+.btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
