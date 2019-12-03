@@ -7,12 +7,12 @@ new Vue({
     el: "#app",
     data: () => ({
         imagenes: [
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)+1))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*9)+1))}.png`,
         ],
         memotest: [],
 
