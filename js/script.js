@@ -31,10 +31,12 @@ new Vue({
                     title: "Perdiste!",
                     html: `
                 <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste!">
-                <p class="h4">Agotaste tus intentos. Has tardado ${crono.textContent}</p>`,
-                    confirmButtonText: "Jugar de nuevo",
+                <p class="h4">Agotaste tus intentos. Has tardado ${crono.textContent}</p>
+                <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
+                            onclick="window.location.reload(false)"></span>`,
                     allowOutsideClick: false,
                     allowEscapeKey: false,
+                    showConfirmButton: false,
                 })
                 .then(this.reiniciarJuego)
         },
@@ -43,10 +45,12 @@ new Vue({
                     title: "Ganaste!",
                     html: `
                 <img class="img-fluid" src="./img/ganaste.jpg" alt="Ganaste">
-                <p class="h4">Muy bien hecho. Has tardado ${crono.textContent}</p>`,
-                    confirmButtonText: "Jugar de nuevo",
+                <p class="h4">Muy bien hecho. Has tardado ${crono.textContent}</p>
+                <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
+                            onclick="window.location.reload(false)"></span>`,
                     allowOutsideClick: false,
                     allowEscapeKey: false,
+                    showConfirmButton: false,
                 })
                 .then(this.reiniciarJuego)
         },
