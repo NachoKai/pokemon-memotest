@@ -1,6 +1,6 @@
 const INTENTOS = 8,
     COLUMNAS = 3,
-    SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1,
+    SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1.5,
     NOMBRE_IMAGEN_OCULTA = "./img/back.png";
 
 new Vue({
