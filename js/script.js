@@ -138,7 +138,7 @@ new Vue({
             }
             this.intentos = 0;
             this.memotest = memotestDividido;
-            crono.textContent = "00:00:00"
+            crono.textContent = "00:00"
         },
 
         precargarImagenes() {
@@ -173,7 +173,6 @@ new Vue({
             let crono = document.getElementById('crono'),
                 seconds = 0,
                 minutes = 0,
-                hours = 0,
                 t;
 
             function addTheChronometer() {
@@ -183,13 +182,11 @@ new Vue({
                     minutes++;
                     if (minutes >= 60) {
                         minutes = 0;
-                        hours++;
                     }
                 }
 
                 crono.textContent =
-                    (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" +
-                    (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" +
+                   (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" +
                     (seconds > 9 ? seconds : "0" + seconds);
                 timer();
             }
