@@ -143,8 +143,8 @@ new Vue({
 
         precargarImagenes() {
             Swal.fire({
-                    title: "Cargando",
-                    html: `Cargando imágenes...`,
+                    title: "Cargando...",
+                    html: `Buscando imágenes.`,
                     allowOutsideClick: false,
                     allowEscapeKey: false,
                 })
