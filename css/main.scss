@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     transition: all .3s ease;
-    user-select: none
+    user-select: none;
+    text-align: center;
 }
 
 img.card-img-top {
@@ -19,13 +20,12 @@ img.card-img-top.girar {
     transform: rotateY(180deg)
 }
 
-body {
-    text-align: center
+body{
+    min-height: calc(100vh - 20px);
 }
-
 footer {
-    height: 30px;
-    text-align: center
+    height: 20px;
+    line-height: 50%;
 }
 
 footer a,
@@ -49,7 +49,10 @@ footer a:hover {
 
 .title {
     max-width: 500px;
-    width: 100%;
+}
+
+.logo {
+    max-width: 100%;
     height: auto;
     padding: 5px;
 }
