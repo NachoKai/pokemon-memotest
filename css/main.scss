@@ -64,6 +64,11 @@ footer a:hover {
 }
 
 .data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     padding: 5px;
 }
 
