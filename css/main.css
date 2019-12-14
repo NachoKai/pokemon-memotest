@@ -85,7 +85,7 @@ footer a:hover {
   padding: 5px;
 }
 
-.row, p {
-  margin: 0px !important;
+p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
