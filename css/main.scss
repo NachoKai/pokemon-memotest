@@ -16,7 +16,6 @@ img.card-img-top {
 }
 
 img.card-img-top.girar {
-    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg)
 }
 
@@ -68,10 +67,6 @@ footer a:hover {
     padding: 5px;
 }
 
-p {
-    margin-bottom: 0;
-}
-
-.row {
+.row, p {
     margin: 0px !important;
 }
