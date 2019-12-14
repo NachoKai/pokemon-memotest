@@ -18,13 +18,13 @@
     <main role="main" class="container-fluid" id="app">
         <div class="row">
             <div class="col-12">
-                <div class="logo"> <img src="img/logo1.png" class="title" alt="Pokemon">
+                <div class="logo"> <img src="img/logo1.png" class="title" alt="Pokemon"><br>
                     <img src="img/logo2.png" class="title" alt="Memotest"></div>
                 <p class="data">
-                    <span class="h5">Intentos: {{intentos}}/{{INTENTOS}}</span>
+                    <span class="h5">Intentos: {{intentos}}/{{INTENTOS}} </span>
+                    <span class="h5">Tiempo: <time id="crono">00:00:00</time></span>
                     <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
-                            onclick="window.location.reload(false)"></span> 
-                    <span class="h5"><time id="crono">00:00:00</time></span>
+                        onclick="window.location.reload(false)"></span> 
                 </p>
             </div>
         </div>
@@ -39,7 +39,6 @@
             </div>
         </div>
     </main>
-    <br>
     <footer class="px-2 py-2 fixed-bottom bg-danger text-white">
         <a href="https://github.com/NachoKai" class="link">Nacho Caiafa</a>
         &copy;
