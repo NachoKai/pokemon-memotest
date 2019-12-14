@@ -20,6 +20,12 @@ img.card-img-top.girar {
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     min-height: calc(100vh - 20px);
 }
 
