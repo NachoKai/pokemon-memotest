@@ -66,7 +66,8 @@ footer a:hover {
 }
 
 .title {
-  max-width: 500px;
+  padding: 5px;
+  max-width: 400px;
 }
 
 .logo {
@@ -77,5 +78,9 @@ footer a:hover {
 
 .data {
   padding: 5px;
+}
+
+p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

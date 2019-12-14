@@ -20,9 +20,10 @@ img.card-img-top.girar {
     transform: rotateY(180deg)
 }
 
-body{
+body {
     min-height: calc(100vh - 20px);
 }
+
 footer {
     height: 20px;
     line-height: 50%;
@@ -48,7 +49,8 @@ footer a:hover {
 }
 
 .title {
-    max-width: 500px;
+    padding: 5px;
+    max-width: 400px;
 }
 
 .logo {
@@ -59,4 +61,8 @@ footer a:hover {
 
 .data {
     padding: 5px;
+}
+
+p {
+    margin-bottom: 0;
 }
