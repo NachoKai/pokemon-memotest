@@ -5,7 +5,7 @@
     box-sizing: border-box;
     transition: all .3s ease;
     user-select: none;
-    text-align: center;
+    text-align: center
 }
 
 img.card-img-top {
@@ -25,18 +25,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    min-height: calc(100vh - 20px);
-}
-
-main {
-    max-width: 100%;
-    height: auto;
+    align-items: center
 }
 
 footer {
     height: 20px;
-    line-height: 50%;
+    line-height: 50%
 }
 
 footer a,
@@ -57,23 +51,26 @@ footer a:hover {
 }
 
 #app {
+    max-width: 100%;
+    height: auto;
+    min-height: calc(100vh - 20px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .title {
     padding: 5px;
     max-width: 100%;
-    max-height: 65px;
+    max-height: 65px
 }
 
 .logo {
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 
 .data {
@@ -83,13 +80,13 @@ footer a:hover {
     justify-content: center;
     align-content: center;
     align-items: baseline;
-    padding: 5px;
+    padding: 5px
 }
 
 p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important
 }
 
 .mb-3 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: .5rem !important
 }
