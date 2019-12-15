@@ -30,8 +30,8 @@ new Vue({
             Swal.fire({
                     title: "Perdiste!",
                     html: `
-                <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste!">
-                <p class="h4">Agotaste tus intentos. Has tardado ${crono.textContent}</p>
+                <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste!"><br>
+                <br><p class="h4">Agotaste tus intentos.<br>Has tardado ${crono.textContent}</p><br>
                 <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
                             onclick="window.location.reload(false)"></span>`,
                     allowOutsideClick: false,
@@ -45,7 +45,7 @@ new Vue({
                     title: "Ganaste!",
                     html: `
                 <img class="img-fluid" src="./img/ganaste.jpg" alt="Ganaste">
-                <p class="h4">Muy bien hecho. Has tardado ${crono.textContent}</p>
+                <br><br><p class="h4">Muy bien hecho.<br>Has tardado ${crono.textContent}</p><br>
                 <span><input type="button" value="Reiniciar" class="btn btn-outline-danger"
                             onclick="window.location.reload(false)"></span>`,
                     allowOutsideClick: false,
@@ -186,7 +186,7 @@ new Vue({
                 }
 
                 crono.textContent =
-                   (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" +
+                    (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" +
                     (seconds > 9 ? seconds : "0" + seconds);
                 timer();
             }
