@@ -15,12 +15,12 @@ let num1arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.
     num4 = `${num4arr[0]}${num4arr[1]}${num4arr[2]}`,
     num5 = `${num5arr[0]}${num5arr[1]}${num5arr[2]}`,
     num6 = `${num6arr[0]}${num6arr[1]}${num6arr[2]}`,
-    cry1 = new Audio(`https://pokemoncries.com/cries/${num1}.mp3`),
-    cry2 = new Audio(`https://pokemoncries.com/cries/${num2}.mp3`),
-    cry3 = new Audio(`https://pokemoncries.com/cries/${num3}.mp3`),
-    cry4 = new Audio(`https://pokemoncries.com/cries/${num4}.mp3`),
-    cry5 = new Audio(`https://pokemoncries.com/cries/${num5}.mp3`),
-    cry6 = new Audio(`https://pokemoncries.com/cries/${num6}.mp3`)
+    cry1 = new Audio(`https://pokemoncries.com/cries/${parseInt(num1, 10)}.mp3`),
+    cry2 = new Audio(`https://pokemoncries.com/cries/${parseInt(num2, 10)}.mp3`),
+    cry3 = new Audio(`https://pokemoncries.com/cries/${parseInt(num3, 10)}.mp3`),
+    cry4 = new Audio(`https://pokemoncries.com/cries/${parseInt(num4, 10)}.mp3`),
+    cry5 = new Audio(`https://pokemoncries.com/cries/${parseInt(num5, 10)}.mp3`),
+    cry6 = new Audio(`https://pokemoncries.com/cries/${parseInt(num6, 10)}.mp3`)
 
 new Vue({
     el: "#app",
