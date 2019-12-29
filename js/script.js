@@ -137,6 +137,8 @@ new Vue({
                 }, SEGUNDOS_ESPERA_VOLTEAR_IMAGEN * 1000);
                 this.aumentarIntento();
             }
+
+            
         },
         reiniciarJuego() {
             let memotest = [];
