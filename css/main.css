@@ -17,8 +17,8 @@ img.card-img-top {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
-  max-height: 150px !important;
-  max-width: 150px !important;
+  max-height: 142px !important;
+  max-width: 142px !important;
 }
 
 img.card-img-top.girar {
@@ -47,8 +47,8 @@ body {
 }
 
 footer {
-  height: 20px;
-  line-height: 50%;
+  height: 19px;
+  line-height: 20%;
 }
 
 footer a,

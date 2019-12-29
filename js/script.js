@@ -3,16 +3,35 @@ const INTENTOS = 8,
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1.5,
     NOMBRE_IMAGEN_OCULTA = "./img/back.png";
 
+let num1arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num2arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num3arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num4arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num5arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num6arr = [Number((Math.round(Math.random() * 3))), Number((Math.round(Math.random() * 9))), Number((Math.round(Math.random() * 8) + 1))],
+    num1 = `${num1arr[0]}${num1arr[1]}${num1arr[2]}`,
+    num2 = `${num2arr[0]}${num2arr[1]}${num2arr[2]}`,
+    num3 = `${num3arr[0]}${num3arr[1]}${num3arr[2]}`,
+    num4 = `${num4arr[0]}${num4arr[1]}${num4arr[2]}`,
+    num5 = `${num5arr[0]}${num5arr[1]}${num5arr[2]}`,
+    num6 = `${num6arr[0]}${num6arr[1]}${num6arr[2]}`,
+    cry1 = new Audio(`https://pokemoncries.com/cries/${num1}.mp3`),
+    cry2 = new Audio(`https://pokemoncries.com/cries/${num2}.mp3`),
+    cry3 = new Audio(`https://pokemoncries.com/cries/${num3}.mp3`),
+    cry4 = new Audio(`https://pokemoncries.com/cries/${num4}.mp3`),
+    cry5 = new Audio(`https://pokemoncries.com/cries/${num5}.mp3`),
+    cry6 = new Audio(`https://pokemoncries.com/cries/${num6}.mp3`)
+
 new Vue({
     el: "#app",
     data: () => ({
         imagenes: [
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
-            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${Number((Math.round(Math.random()*3)))}${Number((Math.round(Math.random()*9)))}${Number((Math.round(Math.random()*8)+1))}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num1}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num2}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num3}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num4}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num5}.png`,
+            `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num6}.png`,
         ],
         memotest: [],
 
@@ -193,6 +212,24 @@ new Vue({
 
             const timer = () => t = setTimeout(addTheChronometer, 1000);
             window.onload = timer();
+        },
+        playCry1() {
+            cry1.play();
+        },
+        playCry2() {
+            cry2.play();
+        },
+        playCry3() {
+            cry3.play();
+        },
+        playCry4() {
+            cry4.play();
+        },
+        playCry5() {
+            cry5.play();
+        },
+        playCry6() {
+            cry6.play();
         },
     },
     mounted() {
