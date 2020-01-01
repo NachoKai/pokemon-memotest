@@ -239,3 +239,5 @@ new Vue({
         this.reloj();
     },
 });
+
+document.getElementById("current-year").innerHTML = new Date().getFullYear();
